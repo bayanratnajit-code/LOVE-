@@ -1,0 +1,33 @@
+@media(max-width:420px){
+    .menu{
+        display: none;
+        flex-direction: column;
+        width: 100%;
+    }
+    .menu-icon{
+        display: block;
+    }
+    .menu-toogle:checked + .menu-icon + .menu{
+        display: flex;
+    }
+}
+body {
+  margin: 0;
+  overflow: hidden;
+}
+
+.controls {
+  position: absolute;
+  top: 10;
+  left: 110;
+  z-index: 1;
+}
+
+canvas {
+  position: absolute;
+}
+
+svg {
+  position: absolute;
+  display: none;
+}
